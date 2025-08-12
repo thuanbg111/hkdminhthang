@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Hộ Kinh Doanh Lê Thị Minh Thắng</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
+        header { background-color: #b71c1c; color: white; text-align: center; padding: 15px 0; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { color: #b71c1c; text-align: center; margin-bottom: 20px; }
+
+        .contact-info { margin-bottom: 20px; text-align: center; }
+        .contact-info p { font-size: 16px; line-height: 1.6; }
+
+        /* Bố cục 2 cột */
+        .contact-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-form, .map-wrap {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Form */
+        form { display: flex; flex-direction: column; }
+        label { font-weight: bold; margin: 10px 0 5px; }
+        input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+        textarea { resize: vertical; min-height: 100px; }
+        button { margin-top: 15px; padding: 12px; border: none; background-color: #b71c1c; color: white; font-size: 16px; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #d32f2f; }
+
+        /* Map */
+        .map-iframe { width: 100%; height: 350px; border: 0; border-radius: 8px; }
+
+        footer { background-color: #333; color: white; text-align: center; padding: 15px 0; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HỘ KINH DOANH LÊ THỊ MINH THẮNG</h1>
+        <p>Sản xuất giò lụa, chả, nem chua tại Phú Thọ</p>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="gioi-thieu.html">Giới thiệu</a>
+            <a href="san-pham.html">Sản phẩm</a>
+            <a href="lien-he.html">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Liên hệ với chúng tôi</h2>
+        <div class="contact-info">
+            <p><strong>Địa chỉ:</strong> Khu 9, Xã Phú Hộ, Thị xã Phú Thọ, Tỉnh Phú Thọ, Việt Nam</p>
+            <p><strong>Điện thoại:</strong> 0345.281.874</p>
+            <p><strong>Email:</strong> jsdfsdj@gmail.com</p>
+        </div>
+
+        <div class="contact-layout">
+            <!-- Form liên hệ -->
+            <div class="contact-form">
+                <form action="mailto:jsdfsdj@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+                    <label for="message">Nội dung</label>
+                    <textarea id="message" name="message" placeholder="Nhập nội dung liên hệ..." required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-wrap">
+                <iframe
+                    class="map-iframe"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=khu%209,%20x%C3%A3%20Ph%C3%BA%20H%E1%BB%99,%20Th%E1%BB%8B%20x%C3%A3%20Ph%C3%BA%20Th%E1%BB%8D,%20T%E1%BB%89nh%20Ph%C3%BA%20Th%E1%BB%8D,%20Vi%E1%BB%87t%20Nam&output=embed">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Hộ Kinh Doanh Lê Thị Minh Thắng - Địa chỉ: Khu 9, Xã Phú Hộ, Thị xã Phú Thọ, Tỉnh Phú Thọ
+    </footer>
+</body>
+</html>

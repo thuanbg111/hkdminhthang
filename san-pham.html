@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Hộ Kinh Doanh Lê Thị Minh Thắng</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+        header { background-color: #b71c1c; padding: 10px 0; text-align: center; color: white; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        section {
+        flex: 1;
+        padding: 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+        h2 { color: #b71c1c; text-align: center; margin-bottom: 20px; }
+        .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .product { border: 1px solid #ddd; border-radius: 5px; padding: 10px; text-align: center; background: #fff; }
+        .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        .product h3 { margin: 10px 0; color: #b71c1c; }
+        .product p { font-size: 14px; color: #555; }
+        footer {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HỘ KINH DOANH LÊ THỊ MINH THẮNG</h1>
+    <p>Sản xuất giò lụa, chả, nem chua tại Phú Thọ</p>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html">Sản phẩm</a>
+        <a href="lien-he.html">Liên hệ</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Sản phẩm của chúng tôi</h2>
+    <div class="product-list">
+        <div class="product">
+            <img src="images/gio-lua.png" alt="Giò Lụa">
+            <h3>Giò Lụa</h3>
+            <p>Giò lụa truyền thống, dai giòn, hương vị thơm ngon, đảm bảo vệ sinh an toàn thực phẩm.</p>
+        </div>
+        <div class="product">
+            <img src="images/cha-que.png" alt="Chả Quế">
+            <h3>Chả Quế</h3>
+            <p>Chả quế thơm nồng mùi quế, vỏ giòn nhẹ, thịt dai, thích hợp cho mọi bữa ăn.</p>
+        </div>
+        <div class="product">
+            <img src="images/nem-chua.png" alt="Nem Chua">
+            <h3>Nem Chua</h3>
+            <p>Nem chua lên men tự nhiên, chua nhẹ, cay nhẹ, gói lá chuối thơm lừng.</p>
+        </div>
+        <div class="product">
+            <img src="images/gio-bo.png" alt="Giò Bò">
+            <h3>Giò Bò</h3>
+            <p>Giò bò thơm ngon, đậm vị, được chế biến từ thịt bò tươi chất lượng cao.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Hộ Kinh Doanh Lê Thị Minh Thắng - Địa chỉ: Khu 9, Xã Phú Hộ, Thị xã Phú Thọ, Tỉnh Phú Thọ
+</footer>
+
+</body>
+</html>
